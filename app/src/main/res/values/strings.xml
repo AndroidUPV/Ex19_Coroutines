@@ -1,0 +1,15 @@
+<!--
+  ~ Copyright (c) 2022
+  ~ David de Andrés and Juan Carlos Ruiz
+  ~ Development of apps for mobile devices
+  ~ Universitat Politècnica de València
+  -->
+
+<resources>
+    <string name="app_name">Ex19_Coroutines</string>
+    <!--Strings for DashboardFragment-->
+    <string name="single_coroutine">Launch a single coroutine</string>
+    <string name="suspend_function">launch several coroutines and\na suspend function</string>
+    <string name="async">Launch coroutines with async()\nto wait for results</string>
+    <string name="with_context">Launch coroutines with\ndifferent dispatchers</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2022
+  ~ David de Andrés and Juan Carlos Ruiz
+  ~ Development of apps for mobile devices
+  ~ Universitat Politècnica de València
+  -->
+
+<!--Displays a series of buttons that launch different coroutines-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".ui.activities.MainActivity">
+
+    <Button
+        android:id="@+id/bSingleCoroutine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/single_coroutine"
+        app:layout_constraintBottom_toTopOf="@+id/bSuspendFunction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bSuspendFunction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/suspend_function"
+        app:layout_constraintBottom_toTopOf="@+id/bAsyncCoroutines"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bSingleCoroutine" />
+
+    <Button
+        android:id="@+id/bAsyncCoroutines"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/async"
+        app:layout_constraintBottom_toTopOf="@+id/bWithContext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bSuspendFunction" />
+
+    <Button
+        android:id="@+id/bWithContext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/with_context"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bAsyncCoroutines" />
+</androidx.constraintlayout.widget.ConstraintLayout>
