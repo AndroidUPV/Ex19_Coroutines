@@ -1,4 +1,4 @@
-# Ex18_Coroutines
+# Ex19_Coroutines
 Lecture 05 - Development of Graphical User Interfaces (GUI)
 
 The app displays a series of buttons that launch different coroutines.
