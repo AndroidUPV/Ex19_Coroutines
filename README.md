@@ -1,5 +1,5 @@
 # Ex19_Coroutines
-Lecture 05 - Development of Graphical User Interfaces (GUI)
+Lecture 05 - Data Layer and HTTP Communications
 
 The app displays a series of buttons that launch different coroutines.
 The delay() suspend function is used to emulate long runing operations.
