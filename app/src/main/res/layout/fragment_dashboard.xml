@@ -25,7 +25,6 @@
         android:text="@string/single_coroutine"
         app:layout_constraintBottom_toTopOf="@+id/bSuspendFunction"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,7 +35,6 @@
         android:text="@string/suspend_function"
         app:layout_constraintBottom_toTopOf="@+id/bAsyncCoroutines"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bSingleCoroutine" />
 
@@ -47,7 +45,6 @@
         android:text="@string/async"
         app:layout_constraintBottom_toTopOf="@+id/bWithContext"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bSuspendFunction" />
 
@@ -58,7 +55,6 @@
         android:text="@string/with_context"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bAsyncCoroutines" />
 </androidx.constraintlayout.widget.ConstraintLayout>
