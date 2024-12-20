@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright (c) 2022-2023 Universitat Politècnica de València
+  ~ Copyright (c) 2022-2024 Universitat Politècnica de València
   ~ Authors: David de Andrés and Juan Carlos Ruiz
   ~          Fault-Tolerant Systems
   ~          Instituto ITACA
@@ -13,7 +13,20 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Ex19_Coroutines" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!--Set the style for the Actionbar-->
+        <item name="toolbarStyle">@style/ToolBarStyle</item>
+    </style>
+    <!--Style for the custom Toolbar-->
+    <style name="ToolBarStyle" parent="@style/Widget.Material3.Toolbar.Surface">
+        <item name="titleTextColor">@color/white</item>
+        <item name="materialThemeOverlay">@style/ToolbarThemeOverlay</item>
+    </style>
+    <!--ThemeOverlay for the custom Toolbar-->
+    <style name="ToolbarThemeOverlay" parent="">
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="colorSurface">?attr/colorPrimary</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
     </style>
 
     <style name="Theme.Ex19_Coroutines" parent="Base.Theme.Ex19_Coroutines" />
